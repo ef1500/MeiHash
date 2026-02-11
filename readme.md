@@ -35,7 +35,7 @@ The idea was as follows:
 
 * Split the 128-bit data into two 64-bit halves, $M_i$ and $Y_i$
 * One path XORs the data with the "secret" data ($M_S$, $Y_S$)
-* One path XORs the data with the "seed" block  ($M_P$, $Y_P$)
+* One path XORs the data with the "seed" block (different than the seed parameter)  ($M_P$, $Y_P$)
 * Both M and Y halves get multiplied together and get stored in $M_z$ and $M_k$.
 *   $M_z = M_s * Y_s$ ,  $M_k = M_p * Y_p$
 * XOR $M_z$ with $M_k$ to get the hash value
